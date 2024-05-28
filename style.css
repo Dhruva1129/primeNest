@@ -1,0 +1,495 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Mukta", sans-serif;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px 15px;
+    background-color: hsl(190, 30%, 97%);
+    border-radius: 30px;
+}
+
+.nav-title {
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+}
+
+.nav-title img {
+    height: 18px;
+    width: 18px;
+    padding: 10px;
+}
+
+.nav-elements {
+    display: flex;
+    background-color: white;
+    border-radius: 30px;
+}
+
+.nav-elements ul li {
+    list-style: none;
+    display: inline-block;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 12px;
+}
+
+.nav-elements ul {
+    padding: 0px 10px 0px 15px;
+}
+
+.nav-elements ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-elements img {
+    padding-left: 10px;
+    height: 17px;
+    width: 17px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+.nav-btn {
+    display: flex;
+    align-items: center;
+}
+
+.nav-btn button {
+    margin: 10px;
+    height: 50px;
+    width: 105px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    background-color: hsl(190, 30%, 97%);
+}
+
+.nav-btn button:hover {
+    border: 1px solid hsl(0, 0%, 80%);
+    background-color: white;
+}
+
+#menu-icon {
+    height: 25px;
+    width: 25px;
+    padding-right: 15px;
+    z-index: 1000;
+    cursor: pointer;
+    display: none;
+}
+
+.hero {
+    height: 84vh;
+    background: rgb(159,221,255);
+    background: linear-gradient(90deg, rgb(166, 223, 253) 0%, rgba(212,246,255,1) 39%, rgba(255,227,175,1) 100%);
+    margin: 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.hero-left{
+    padding: 4%;
+}
+.hero-left h5{
+    font-size: 16px;
+}
+.hero-left h1{
+    font-size: 70px;
+    line-height: 1;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.hero-left p {
+    font-size: 14px;
+    font-weight: 550;
+}
+::placeholder {
+    padding-left: 15px;
+}
+.input-feild {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+.input {
+    height: 45px;
+    width: 260px;
+    border: none;
+    border-radius: 50px 0 0 50px
+}
+
+.input-button {
+    border: none;
+    border-radius: 0 40px 40px 0;
+    padding: 15px 20px;
+    background-color: #000000;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.input-button:hover {
+    background-color: hsla(194, 100%, 72%, 0.945);
+    color: black;
+}
+.hero-right img {
+    padding-left: 130px;
+    height: 490px;
+}
+
+.about {
+    height: auto;
+    background: rgb(255, 255, 255);
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.heading {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.heading h6 {
+    margin-bottom: 0;
+    font-size: 15px;
+    color: hsl(0, 0%, 30%);
+}
+.heading h3 {
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-size: 55px;
+}
+.section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 90px;
+    padding-right: 90px;
+}
+.box h4 {
+    font-size: 21px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.box p {
+    margin-top: 0;
+    font-size: 15px;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .nav-title {
+        font-size: 14px;
+    }
+
+    .nav-title img {
+        height: 17px;
+        width: 17px;
+    }
+
+    .nav-elements ul li {
+        font-size: 11px;
+    }
+
+    .nav-elements img {
+        height: 16px;
+        width: 16px;
+    }
+
+    .nav-btn button {
+        height: 49px;
+        width: 104px;
+    }
+
+    .hero-left h1{
+        font-size: 65px;
+    }
+    .hero-left p {
+        font-size: 13px;
+    }
+    .input {
+        width: 230px;
+    }
+    .hero-right img {
+        padding-left: 0;
+        height: 411px;
+    }
+
+}
+@media screen and (max-width: 768px) {
+
+    .nav-title {
+        font-size: 13px;
+    }
+
+    .nav-title img {
+        height: 16px;
+        width: 16px;
+        padding: 10px;
+    }
+
+    .nav-elements {
+        position: absolute;
+        top: 15%;
+        right: -100%;
+        width: 131px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        background-color: #141313;
+        padding: 20px 15px;
+        border-radius: 10px;
+        transition: all .42s;
+    }
+
+    .nav-elements ul li {
+        list-style: none;
+        display: inline-block;
+        align-items: center;
+        font-size: 15px;
+        text-decoration: none;
+        color: black;
+    }
+
+    .nav-elements ul li a {
+        color: #fff;
+        display: block;
+        margin: 10px 0;
+    }
+    .nav-elements.open {
+        right: 0;
+    }
+
+    .nav-elements img {
+        display: none;
+    }
+
+    #menu-icon {
+        display: block;
+    }
+
+    .hero {
+        height: 153vh;
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+    .hero-right {
+        display: flex;
+        align-items: center;
+    }
+    .hero-right img {
+        padding-left: 0;
+        height: 411px;
+    }
+    .heading h3 {
+        margin-bottom: 25px;
+        font-size: 40px;
+    }
+    .section {
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+    .box h4 {
+        font-size: 19px;
+    }
+    .box p {
+        font-size: 11px;
+    }
+    
+}
+@media screen and (max-width: 425px) {
+    .nav-title {
+        font-size: 13px;
+    }
+
+    .nav-title img {
+        height: 15px;
+        width: 15px;
+    }
+
+    .nav-btn button {
+        font-size: 10px;
+        height: 30px;
+        width: 81px;
+    }
+    .hero {
+        height: 115vh;
+    }
+    .hero-left h5{
+        font-size: 15px;
+    }
+    .hero-left h1{
+        font-size: 50px;
+        line-height: 1;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .hero-left p {
+        font-size: 11px;
+    }
+    .input {
+        height: 35px;
+        width: 175px;
+    }
+    
+    .input-button {
+        padding: 11px 20px;
+    }
+    .hero-right img {
+        padding-left: 0;
+        height: 290px;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+    .heading h6 {
+        font-size: 13px;
+    }
+    .heading h3 {
+        margin-bottom: 25px;
+        font-size: 25px;
+    }
+    .section {
+        flex-direction: column;
+        align-items:flex-start;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .box h4 {
+        font-size: 21px;
+    }
+    .box p {
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 375px) {
+    .nav-title {
+        font-size: 12px;
+    }
+
+    .nav-title img {
+        height: 15px;
+        width: 15px;
+    }
+
+    .nav-btn button {
+        margin: 0;
+        font-size: 10px;
+        height: 30px;
+        width: 81px;
+    }
+    .hero {
+        height: 110vh;
+    }
+    .hero-left h5{
+        font-size: 13px;
+    }
+    .hero-left h1{
+        font-size: 47px;
+    }
+    .hero-left p {
+        font-size: 10px;
+    }
+    .input {
+        height: 30px;
+        width: 160px;
+    }
+    
+    .input-button {
+        padding: 19px 15px;
+    }
+    .hero-right img {
+        height: 275px;
+    }
+    .heading h3 {
+        font-size: 22px;
+    }
+    .box h4 {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .nav-title {
+        font-size: 11px;
+    }
+    .nav-title img {
+        padding-right: 5px;
+    }
+
+    .nav-title img {
+        height: 14px;
+        width: 14px;
+    }
+
+    .nav-btn button {
+        margin: 0;
+        font-size: 9px;
+        height: 29px;
+        width: 75px;
+    }
+    .hero {
+        height: 96vh;
+    }
+    .hero-left h5{
+        font-size: 12px;
+    }
+    .hero-left h1{
+        font-size: 41px;
+    }
+    .hero-left p {
+        font-size: 9px;
+    }
+    .input {
+        height: 25px;
+        width: 140px;
+    }
+    
+    .input-button {
+        padding: 6px 10px;
+    }
+    .hero-right img {
+        height: 230px;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+    .heading h6 {
+        font-size: 13px;
+    }
+    .heading h3 {
+        margin-bottom: 25px;
+        font-size: 20px;
+    }
+    .section {
+        flex-direction: column;
+        align-items:flex-start;
+        padding-left: 10px;
+        padding-right: 30px;
+    }
+    .box h4 {
+        font-size: 18px;
+    }
+    .box p {
+        font-size: 11px;
+    }
+}
